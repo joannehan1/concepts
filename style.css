@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+
+html, body{
+	margin: 0;
+	padding-top: 60px;
+	padding-bottom: 7%;
+	position: relative;
+	min-height: 100%;
+	font-size: 20px;
+	font-family: Quicksand, Arial;
+	font-weight: 300;
+	text-align: center;
+	background-color: #101010;
+}
+
+.box {
+	width: 80%;
+	margin: auto;
+	max-width: 900px;
+	border-radius: 10px;
+	position: relative;
+	background-color: transparent;
+}
+
+#light {
+	max-width: 900px;
+	z-index: 10000;
+	position: absolute;
+	-webkit-animation-name: light; /* Safari 4.0 - 8.0 */
+ 	 -webkit-animation-duration: 7s; /* Safari 4.0 - 8.0 */
+ 	 -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+ 	 -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+	animation-name: light;
+ 	animation-duration: 7s;
+  	animation-iteration-count: infinite;
+  	animation-direction: alternate;  
+}
+
+
+#cat {
+  width: 140px;
+  margin-left: 800px;
+  margin-top:250px;
+  position: absolute;
+  -webkit-animation-name: cat; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 5s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation-name: cat;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;  
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes cat {
+  0%   {left:0px; top:0px;}
+  25%  {left:40px; top:0px;}
+  50%  {left:40px; top:40px;}
+  75%  {left:0px; top:40px;}
+  100% {left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes cat {
+  0%   {left:0px; top:0px;}
+  25%  {left:40px; top:0px;}
+  50%  {left:40px; top:40px;}
+  75%  {left:0px; top:40px;}
+  100% {left:0px; top:0px;}
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes light {
+  0%   {opacity: 1}
+  25%  {opacity: .5}
+  50%  {opacity: .25}
+  75%  {opacity: .5}
+  100% {opacity: 1}
+}
+
+/* Standard syntax */
+@keyframes light {
+  0%   {opacity: 1}
+  25%  {opacity: .6}
+  50%  {opacity: 0}
+  75%  {opacity: .75}
+  100% {opacity: 1}
+}
