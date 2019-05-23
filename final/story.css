@@ -1,0 +1,106 @@
+/*@font-face {
+font-family:"Gaegu";
+src: url('https://dl.dropboxusercontent.com/s/9jhv2y3v1ky37yp/so.otf');
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Gaegu&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 80%;
+}
+
+/* pink accent #efa491 */
+
+body {
+    text-align: center;
+    font-family: Gaegu;
+    color: #ccc;
+    background: #253a65;
+    padding-top: 25%;
+    margin-top: -1px;
+    font-size: 2em;
+
+    animation: colorchange 5s; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 5s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: #171d2d;}
+      100% {background: #253a65;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: #171d2d;}
+      100% {background: #253a65;}
+    }
+}
+
+p {
+  line-height: 5em;
+  font-size: 1em;
+  max-width: 900px
+}
+
+.english {
+  line-height: 2em;
+  font-size: .5em;
+  color:#eee;
+  font-style: italic;
+
+}
+
+.vr {
+    width:1px;
+    height: 200px;
+    margin-top: -25%;
+    margin-bottom: 25%;
+    background-color:#ccc;
+    margin-left: 50%;
+}
+
+.vrw {
+    width:1px;
+    height: 200px;
+    margin-top: -25%;
+    margin-bottom: 25%;
+    background-color:#fff;
+    margin-left: 50%;
+}
+
+img {
+  width: 150px;
+}
+
+#cross img{
+  margin-top:50px;
+  height:50px;
+  width:auto;
+}
+
+#cross:hover img{
+  height: 90px;
+  width:auto;
+}
+
+div {
+  margin-bottom: 50%;
+}
+
+a {
+  text-decoration: none;
+  font-size: .5em;
+  color: #ccc;
+  font-style: italic;
+  letter-spacing: .05em;
+}
+
+
+
